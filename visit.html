@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Visit &amp; reserve · Platanos Tavern</title>
+<meta name="description" content="Opening hours, directions and table reservations at Platanos, Chalkoutsi, Greece.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Commissioner:wght@300..800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="visit">
+<div id="site-header"></div>
+
+<header class="hero hero-page">
+  <canvas aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="eyebrow"><span class="en">Come and sit</span><span class="el">Έλα να καθίσεις</span></span>
+    <h1><span class="en">Visit &amp; reserve</span><span class="el">Επίσκεψη &amp; κράτηση</span></h1>
+    <p class="lede"><span class="en">Find the tree, check the hours, and book a table for your group.</span><span class="el">Βρες τον πλάτανο, δες το ωράριο και κλείσε τραπέζι για την παρέα σου.</span></p>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <div class="status" data-status style="margin-bottom:1.5rem"></div>
+        <h2 class="h-display h-section" style="font-size:clamp(1.8rem,4vw,2.6rem)"><span class="en">Opening hours</span><span class="el">Ωράριο</span></h2>
+        <ul class="hours" data-hours></ul>
+        <p class="note" data-sample-note></p>
+      </div>
+      <div>
+        <h2 class="h-display h-section" style="font-size:clamp(1.8rem,4vw,2.6rem)"><span class="en">Find us</span><span class="el">Πού θα μας βρεις</span></h2>
+        <ul class="contact-list" data-contact></ul>
+        <a class="btn" data-maps href="#"><span class="en">Open in Maps</span><span class="el">Άνοιγμα στους Χάρτες</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="reserve-section">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow"><span class="en">Book a table</span><span class="el">Κλείσε τραπέζι</span></span>
+        <h2 class="h-display h-section"><span class="en">Tell us when you are coming.</span><span class="el">Πες μας πότε έρχεσαι.</span></h2>
+        <p><span class="en">For groups of more than six, please call. We will push tables together.</span><span class="el">Για παρέες άνω των έξι ατόμων, πάρε μας τηλέφωνο. Θα ενώσουμε τα τραπέζια.</span></p>
+      </div>
+      <form class="form" id="reserve" novalidate>
+        <div class="field"><label for="r-name"><span class="en">Name</span><span class="el">Όνομα</span></label><input id="r-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="r-phone"><span class="en">Phone</span><span class="el">Τηλέφωνο</span></label><input id="r-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+        <div class="form-row">
+          <div class="field"><label for="r-date"><span class="en">Date</span><span class="el">Ημερομηνία</span></label><input id="r-date" name="date" type="date" required></div>
+          <div class="field"><label for="r-time"><span class="en">Time</span><span class="el">Ώρα</span></label><select id="r-time" name="time"></select></div>
+        </div>
+        <div class="field"><label for="r-guests"><span class="en">Guests</span><span class="el">Άτομα</span></label><select id="r-guests" name="guests"></select></div>
+        <div class="field"><label for="r-note"><span class="en">Anything we should know</span><span class="el">Κάτι που πρέπει να ξέρουμε</span></label><textarea id="r-note" name="note" rows="3"></textarea></div>
+        <button class="btn solid" type="submit"><span class="en">Request a table</span><span class="el">Ζήτα τραπέζι</span></button>
+        <p class="form-msg" id="form-msg" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow"><span class="en">Good to know</span><span class="el">Καλό είναι να ξέρεις</span></span>
+      <h2 class="h-display h-section"><span class="en">Before you come</span><span class="el">Πριν έρθεις</span></h2>
+      <div class="facts">
+        <div class="todo"><h3><span class="en">Getting here</span><span class="el">Πώς θα έρθεις</span></h3><p><span class="todo-tag"><span class="en">To add</span><span class="el">Προς συμπλήρωση</span></span><span class="en">Directions and parking.</span><span class="el">Οδηγίες και στάθμευση.</span></p></div>
+        <div class="todo"><h3><span class="en">Groups</span><span class="el">Παρέες</span></h3><p><span class="todo-tag"><span class="en">To add</span><span class="el">Προς συμπλήρωση</span></span><span class="en">Group size limits and set menus.</span><span class="el">Όρια ατόμων και σταθερά μενού.</span></p></div>
+        <div class="todo"><h3><span class="en">Dietary needs</span><span class="el">Διατροφικές ανάγκες</span></h3><p><span class="todo-tag"><span class="en">To add</span><span class="el">Προς συμπλήρωση</span></span><span class="en">Vegetarian, vegan and allergy information.</span><span class="el">Πληροφορίες για χορτοφάγους, vegan και αλλεργίες.</span></p></div>
+        <div class="todo"><h3><span class="en">Payment</span><span class="el">Πληρωμή</span></h3><p><span class="todo-tag"><span class="en">To add</span><span class="el">Προς συμπλήρωση</span></span><span class="en">Cash, card and any minimum.</span><span class="el">Μετρητά, κάρτα και τυχόν ελάχιστο.</span></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/site-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
